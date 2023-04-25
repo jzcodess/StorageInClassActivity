@@ -22,11 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <data android:scheme="https" android:mimeType="text/html"/>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="https" android:host="xkcd.com"/>
+                <category android:name="andriod.intent.category.DEFAULT" />
+                <category android:name="andriod.intent.category.BROWSABLE"/>
             </intent-filter>
         </activity>
     </application>
